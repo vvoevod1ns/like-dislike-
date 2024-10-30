@@ -1,0 +1,37 @@
+!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="like()">Like</button>
+<span id="likeCount">0</span> Likes
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="dislike()">Dislike</button>
+<span id="dislikeCount">0</span> Dislikes
+
+<script>
+    let likeCounter = 0;
+    let dislikeCounter = 0;
+
+    function like() {
+        likeCounter++;
+        document.getElementById('myImage').src = '2618507.png';
+        document.getElementById('likeCount').innerText = likeCounter;
+    }
+
+    function dislike() {
+        dislikeCounter++;
+        document.getElementById('myImage').src = '26.png';
+        document.getElementById('dislikeCount').innerText = dislikeCounter;
+    }
+</script>
+
+</body>
+</html>
